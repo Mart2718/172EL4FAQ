@@ -7,31 +7,31 @@
       "id": "faq-1",
       "category": "conceptual",
       "question": "What does the basic graph of a logarithmic function look like?",
-      "answer": "The parent logarithmic graph rises slowly, sweeping steeply upward near a vertical boundary on the left and then leveling off into a gentle, ever-increasing climb as it moves right. It never turns around, but it also never rises as dramatically as an exponential function does — logarithmic growth is famously slow.<div class=\"graph-wrap\"><svg viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"190\" x2=\"290\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"10\" x2=\"40\" y2=\"290\" stroke=\"#D4622A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><polyline points=\"45.2,272.1 56.9,221.4 68.6,198.7 80.3,183.9 92.0,172.8 103.7,164.1 115.4,156.8 127.1,150.5 138.8,145.1 150.5,140.2 162.2,135.9 173.9,131.9 185.6,128.3 197.3,125.0 209.0,121.8 220.7,119.0 232.4,116.2 244.1,113.7 255.8,111.3 267.5,109.0\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"190\" r=\"5\" fill=\"#1a6b6b\"/><text x=\"83\" y=\"187\" font-size=\"11\" fill=\"#1a6b6b\" font-weight=\"600\">(1, 0)</text></svg></div><p class=\"graph-caption\">g(x) = log₂(x) climbs forever, but ever more slowly, hugging a vertical boundary on the left.</p>"
+      "answer": "The parent logarithmic graph rises slowly, sweeping steeply upward near a vertical boundary on the left and then leveling off into a gentle, ever-increasing climb as it moves right. It never turns around, but it also never rises as dramatically as an exponential function does — logarithmic growth is famously slow.<div class=\"graph-wrap\"><svg viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"190\" x2=\"290\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"10\" x2=\"40\" y2=\"290\" stroke=\"#D4622A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><polyline points=\"45.2,272.1 56.9,221.4 68.6,198.7 80.3,183.9 92.0,172.8 103.7,164.1 115.4,156.8 127.1,150.5 138.8,145.1 150.5,140.2 162.2,135.9 173.9,131.9 185.6,128.3 197.3,125.0 209.0,121.8 220.7,119.0 232.4,116.2 244.1,113.7 255.8,111.3 267.5,109.0\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"190\" r=\"5\" fill=\"#1a6b6b\"/><text x=\"83\" y=\"187\" font-size=\"11\" fill=\"#1a6b6b\" font-weight=\"600\">(1, 0)</text></svg></div><p class=\"graph-caption\">\\( g(x) = \\log_2(x) \\) climbs forever, but ever more slowly, hugging a vertical boundary on the left.</p>"
     },
     {
       "id": "faq-2",
       "category": "conceptual",
-      "question": "What is a vertical asymptote, and why does g(x) = log_b(x) have one at x = 0?",
-      "answer": "A vertical asymptote is a vertical line that a graph gets closer and closer to (without touching) as the input approaches some specific x-value. For g(x) = log_b(x), that boundary is x = 0, because the logarithm's domain requires a positive argument (faq-4 in EL3) — as x shrinks toward 0 from the positive side, log_b(x) plunges toward negative infinity, hugging that vertical line forever without ever reaching or crossing it."
+      "question": "What is a vertical asymptote, and why does \\( g(x) = \\log_b(x) \\) have one at x = 0?",
+      "answer": "A vertical asymptote is a vertical line that a graph gets closer and closer to (without touching) as the input approaches some specific x-value. For \\( g(x) = \\log_b(x) \\), that boundary is x = 0, because the logarithm's domain requires a positive argument (faq-4 in EL3) — as x shrinks toward 0 from the positive side, \\( \\log_b(x) \\) plunges toward negative infinity, hugging that vertical line forever without ever reaching or crossing it."
     },
     {
       "id": "faq-3",
       "category": "conceptual",
       "question": "Why does a logarithmic function never have a horizontal asymptote?",
-      "answer": "A horizontal asymptote would mean the output levels off and approaches some fixed value as x grows without bound. But log_b(x) keeps climbing forever, however slowly — it just never stops increasing. Since the output never settles near a fixed height, there's nothing for a horizontal asymptote to attach to."
+      "answer": "A horizontal asymptote would mean the output levels off and approaches some fixed value as x grows without bound. But \\( \\log_b(x) \\) keeps climbing forever, however slowly — it just never stops increasing. Since the output never settles near a fixed height, there's nothing for a horizontal asymptote to attach to."
     },
     {
       "id": "faq-4",
       "category": "conceptual",
-      "question": "What is the domain and range of the parent logarithmic function g(x) = log_b(x)?",
+      "question": "What is the domain and range of the parent logarithmic function \\( g(x) = \\log_b(x) \\)?",
       "answer": "The domain is (0, ∞) — only positive numbers are valid inputs, since that restriction is exactly what defines a logarithm (EL3). The range is all real numbers, (−∞, ∞) — the output can be any real number at all, since the graph climbs without any upper limit and plunges without any lower limit near the asymptote."
     },
     {
       "id": "faq-5",
       "category": "conceptual",
       "question": "What are the x-intercept and y-intercept of the parent logarithmic function, and why is there no y-intercept?",
-      "answer": "The x-intercept is always (1, 0), since any base raised to the power 0 equals 1, meaning log_b(1) = 0 for every base. There is no y-intercept, because a y-intercept would require x = 0 to be a valid input — but 0 isn't in the domain (faq-4), so the graph can never touch the y-axis at all."
+      "answer": "The x-intercept is always (1, 0), since any base raised to the power 0 equals 1, meaning \\( \\log_b(1) = 0 \\) for every base. There is no y-intercept, because a y-intercept would require x = 0 to be a valid input — but 0 isn't in the domain (faq-4), so the graph can never touch the y-axis at all."
     },
     {
       "id": "faq-6",
@@ -55,18 +55,18 @@
       "id": "faq-9",
       "category": "sticking-points",
       "question": "How does a reflection over the x-axis affect a logarithmic function's domain?",
-      "answer": "It doesn't. A reflection over the x-axis (g(x) = −log_b(x)) flips the graph upside down, but every x-value that was valid before is still exactly as valid afterward — flipping vertically never removes or adds any input values. The domain stays (0, ∞); only the shape of the curve inverts."
+      "answer": "It doesn't. A reflection over the x-axis \\( (g(x) = -\\log_b(x)) \\) flips the graph upside down, but every x-value that was valid before is still exactly as valid afterward — flipping vertically never removes or adds any input values. The domain stays (0, ∞); only the shape of the curve inverts."
     },
     {
       "id": "faq-10",
       "category": "sticking-points",
       "question": "How does a reflection over the y-axis affect a logarithmic function's domain?",
-      "answer": "This one DOES change the domain. A reflection over the y-axis (h(x) = log_b(−x)) flips the graph left-to-right, which flips which side of the asymptote is valid: instead of needing x &gt; 0, you now need −x &gt; 0, meaning x &lt; 0. The domain flips from (0, ∞) to (−∞, 0)."
+      "answer": "This one DOES change the domain. A reflection over the y-axis \\( (h(x) = \\log_b(-x)) \\) flips the graph left-to-right, which flips which side of the asymptote is valid: instead of needing x &gt; 0, you now need −x &gt; 0, meaning x &lt; 0. The domain flips from (0, ∞) to (−∞, 0).<div class=\"graph-wrap\"><svg viewBox=\"0 0 340 300\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"170\" y1=\"10\" x2=\"170\" y2=\"290\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"190\" x2=\"320\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><polyline points=\"175.2,272.1 183.6,230.9 191.9,210.2 200.3,196.3 208.6,185.8 216.9,177.3 225.3,170.2 233.6,164.1 242.0,158.8 250.3,154.1 258.6,149.8 267.0,145.9 275.3,142.3 283.6,139.0 292.0,136.0 300.3,133.1 308.7,130.4 317.0,127.9\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"23.0,127.9 31.3,130.4 39.7,133.1 48.0,136.0 56.4,139.0 64.7,142.3 73.0,145.9 81.4,149.8 89.7,154.1 98.0,158.8 106.4,164.1 114.7,170.2 123.1,177.3 131.4,185.8 139.7,196.3 148.1,210.2 156.4,230.9 164.8,272.1\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"3\"/><text x=\"225\" y=\"45\" font-size=\"11\" fill=\"#0a3f52\" font-weight=\"600\">g(x) = log₂(x)</text><text x=\"35\" y=\"45\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"600\">h(x) = log₂(−x)</text></svg></div><p class=\"graph-caption\">Mirror images of each other across the y-axis — same asymptote, opposite side.</p>"
     },
     {
       "id": "faq-11",
       "category": "sticking-points",
-      "question": "How do I find the domain, range, and asymptote of a transformed logarithmic function like j(x) = log₄(x+1) or h(x) = log₄(−x)?",
+      "question": "How do I find the domain, range, and asymptote of a transformed logarithmic function like \\( j(x) = \\log_4(x+1) \\) or \\( h(x) = \\log_4(-x) \\)?",
       "answer": "The range is always (−∞, ∞) no matter what — transformations never change this for a logarithmic function. For the asymptote, start from x = 0 and apply only the horizontal shift and/or horizontal reflection (ignore vertical shifts and reflections — neither affects a vertical asymptote's position). The domain then follows directly from the asymptote and which side of it the graph occupies.<div class=\"example-box\"><div class=\"label\">Worked Examples</div><p class=\"math-line\">\\( j(x) = \\log_4(x+1) \\): horizontal shift left 1 &rarr; asymptote \\( x=-1 \\), domain \\( (-1,\\infty) \\), range \\( (-\\infty,\\infty) \\)</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( h(x) = \\log_4(-x) \\): horizontal reflection only &rarr; asymptote \\( x=0 \\), domain \\( (-\\infty,0) \\), range \\( (-\\infty,\\infty) \\)</p></div>"
     },
     {
