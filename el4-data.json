@@ -1,0 +1,176 @@
+{
+  "section": "EL4",
+  "title": "Graphs of Logarithmic Functions",
+  "learningObjective": "Graph logarithmic functions and determine the domain, range, and asymptotes.",
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "conceptual",
+      "question": "What does the basic graph of a logarithmic function look like?",
+      "answer": "The parent logarithmic graph rises slowly, sweeping steeply upward near a vertical boundary on the left and then leveling off into a gentle, ever-increasing climb as it moves right. It never turns around, but it also never rises as dramatically as an exponential function does — logarithmic growth is famously slow.<div class=\"graph-wrap\"><svg viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"190\" x2=\"290\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"10\" x2=\"40\" y2=\"290\" stroke=\"#D4622A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><polyline points=\"45.2,272.1 56.9,221.4 68.6,198.7 80.3,183.9 92.0,172.8 103.7,164.1 115.4,156.8 127.1,150.5 138.8,145.1 150.5,140.2 162.2,135.9 173.9,131.9 185.6,128.3 197.3,125.0 209.0,121.8 220.7,119.0 232.4,116.2 244.1,113.7 255.8,111.3 267.5,109.0\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"190\" r=\"5\" fill=\"#1a6b6b\"/><text x=\"83\" y=\"187\" font-size=\"11\" fill=\"#1a6b6b\" font-weight=\"600\">(1, 0)</text></svg></div><p class=\"graph-caption\">g(x) = log₂(x) climbs forever, but ever more slowly, hugging a vertical boundary on the left.</p>"
+    },
+    {
+      "id": "faq-2",
+      "category": "conceptual",
+      "question": "What is a vertical asymptote, and why does g(x) = log_b(x) have one at x = 0?",
+      "answer": "A vertical asymptote is a vertical line that a graph gets closer and closer to (without touching) as the input approaches some specific x-value. For g(x) = log_b(x), that boundary is x = 0, because the logarithm's domain requires a positive argument (faq-4 in EL3) — as x shrinks toward 0 from the positive side, log_b(x) plunges toward negative infinity, hugging that vertical line forever without ever reaching or crossing it."
+    },
+    {
+      "id": "faq-3",
+      "category": "conceptual",
+      "question": "Why does a logarithmic function never have a horizontal asymptote?",
+      "answer": "A horizontal asymptote would mean the output levels off and approaches some fixed value as x grows without bound. But log_b(x) keeps climbing forever, however slowly — it just never stops increasing. Since the output never settles near a fixed height, there's nothing for a horizontal asymptote to attach to."
+    },
+    {
+      "id": "faq-4",
+      "category": "conceptual",
+      "question": "What is the domain and range of the parent logarithmic function g(x) = log_b(x)?",
+      "answer": "The domain is (0, ∞) — only positive numbers are valid inputs, since that restriction is exactly what defines a logarithm (EL3). The range is all real numbers, (−∞, ∞) — the output can be any real number at all, since the graph climbs without any upper limit and plunges without any lower limit near the asymptote."
+    },
+    {
+      "id": "faq-5",
+      "category": "conceptual",
+      "question": "What are the x-intercept and y-intercept of the parent logarithmic function, and why is there no y-intercept?",
+      "answer": "The x-intercept is always (1, 0), since any base raised to the power 0 equals 1, meaning log_b(1) = 0 for every base. There is no y-intercept, because a y-intercept would require x = 0 to be a valid input — but 0 isn't in the domain (faq-4), so the graph can never touch the y-axis at all."
+    },
+    {
+      "id": "faq-6",
+      "category": "conceptual",
+      "question": "How does the graph of a logarithmic function relate to the graph of its inverse exponential function?",
+      "answer": "Since a logarithmic function is the inverse of its matching exponential function (EL3, FN6), their graphs are mirror images of each other across the line y = x. Every feature swaps accordingly: the exponential's horizontal asymptote becomes the logarithm's vertical asymptote, the exponential's y-intercept (0,1) becomes the logarithm's x-intercept (1,0), and the domain/range pair flips completely.<div class=\"graph-wrap\"><svg viewBox=\"0 0 340 300\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"210\" x2=\"330\" y2=\"210\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"290\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"84\" y1=\"276\" x2=\"326\" y2=\"34\" stroke=\"#4a4a5a\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><polyline points=\"51.0,209.0 59.7,208.7 68.4,208.3 77.1,207.8 85.7,207.1 94.4,206.2 103.1,205.0 111.8,203.4 120.5,201.3 129.2,198.6 137.8,195.0 146.5,190.3 155.2,184.1 163.9,175.9 172.6,165.2 181.3,151.1 189.9,132.5 198.6,108.2 207.3,76.1 216.0,34.0\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"152.2,283.1 161.3,231.0 170.5,212.2 179.6,200.5 188.8,192.0 197.9,185.3 207.1,179.7 216.2,175.0 225.4,170.9 234.5,167.3 243.7,164.0 252.8,161.1 262.0,158.4 271.1,155.9 280.3,153.6 289.4,151.4 298.6,149.4 307.7,147.5 316.9,145.7 326.0,144.0\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"3\"/><text x=\"225\" y=\"55\" font-size=\"11\" fill=\"#0a3f52\" font-weight=\"600\">f(x) = 2ˣ</text><text x=\"250\" y=\"140\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"600\">g(x) = log₂(x)</text><text x=\"90\" y=\"265\" font-size=\"10\" fill=\"#4a4a5a\" font-style=\"italic\">y = x</text></svg></div><p class=\"graph-caption\">The two graphs are mirror images across y = x — the defining picture of any inverse function pair.</p>"
+    },
+    {
+      "id": "faq-7",
+      "category": "sticking-points",
+      "question": "How does a horizontal shift affect the asymptote, domain, and range of a logarithmic function?",
+      "answer": "A horizontal shift moves the vertical asymptote by exactly the same amount as the shift, since the whole graph — including the vertical boundary it hugs — moves together sideways. The domain shifts along with the asymptote, but the range stays all real numbers either way.<div class=\"graph-wrap\"><svg viewBox=\"0 0 340 300\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"190\" x2=\"310\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"90\" y1=\"10\" x2=\"90\" y2=\"290\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><line x1=\"55\" y1=\"10\" x2=\"55\" y2=\"290\" stroke=\"#D4622A\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><polyline points=\"95.2,272.1 106.3,223.2 117.3,200.8 128.3,186.1 139.3,175.2 150.3,166.4 161.3,159.2 172.4,153.0 183.4,147.5 194.4,142.7 205.4,138.4 216.4,134.4 227.4,130.8 238.4,127.5 249.5,124.4 260.5,121.5 271.5,118.8 282.5,116.2\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"60.2,272.1 71.3,223.2 82.3,200.8 93.3,186.1 104.3,175.2 115.3,166.4 126.3,159.2 137.4,153.0 148.4,147.5 159.4,142.7 170.4,138.4 181.4,134.4 192.4,130.8 203.4,127.5 214.5,124.4 225.5,121.5 236.5,118.8 247.5,116.2\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"3\"/><text x=\"200\" y=\"110\" font-size=\"10\" fill=\"#0a3f52\" font-weight=\"600\">g(x)=log₂(x), asymptote x=0</text><text x=\"160\" y=\"30\" font-size=\"10\" fill=\"#D4622A\" font-weight=\"600\">j(x)=log₂(x+1), asymptote x=&minus;1</text></svg></div><p class=\"graph-caption\">Shifting left 1 moves the whole graph AND its asymptote left 1 — domain becomes (−1, ∞).</p>"
+    },
+    {
+      "id": "faq-8",
+      "category": "sticking-points",
+      "question": "How does a vertical shift affect the asymptote, domain, and range of a logarithmic function?",
+      "answer": "A vertical shift doesn't touch the asymptote, domain, or range at all — since the asymptote x = 0 is a vertical line, sliding the graph up or down doesn't change its horizontal position. The graph just slides vertically along that same unchanged boundary. Only the specific output values (and the x-intercept) change."
+    },
+    {
+      "id": "faq-9",
+      "category": "sticking-points",
+      "question": "How does a reflection over the x-axis affect a logarithmic function's domain?",
+      "answer": "It doesn't. A reflection over the x-axis (g(x) = −log_b(x)) flips the graph upside down, but every x-value that was valid before is still exactly as valid afterward — flipping vertically never removes or adds any input values. The domain stays (0, ∞); only the shape of the curve inverts."
+    },
+    {
+      "id": "faq-10",
+      "category": "sticking-points",
+      "question": "How does a reflection over the y-axis affect a logarithmic function's domain?",
+      "answer": "This one DOES change the domain. A reflection over the y-axis (h(x) = log_b(−x)) flips the graph left-to-right, which flips which side of the asymptote is valid: instead of needing x &gt; 0, you now need −x &gt; 0, meaning x &lt; 0. The domain flips from (0, ∞) to (−∞, 0)."
+    },
+    {
+      "id": "faq-11",
+      "category": "sticking-points",
+      "question": "How do I find the domain, range, and asymptote of a transformed logarithmic function like j(x) = log₄(x+1) or h(x) = log₄(−x)?",
+      "answer": "The range is always (−∞, ∞) no matter what — transformations never change this for a logarithmic function. For the asymptote, start from x = 0 and apply only the horizontal shift and/or horizontal reflection (ignore vertical shifts and reflections — neither affects a vertical asymptote's position). The domain then follows directly from the asymptote and which side of it the graph occupies.<div class=\"example-box\"><div class=\"label\">Worked Examples</div><p class=\"math-line\">\\( j(x) = \\log_4(x+1) \\): horizontal shift left 1 &rarr; asymptote \\( x=-1 \\), domain \\( (-1,\\infty) \\), range \\( (-\\infty,\\infty) \\)</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( h(x) = \\log_4(-x) \\): horizontal reflection only &rarr; asymptote \\( x=0 \\), domain \\( (-\\infty,0) \\), range \\( (-\\infty,\\infty) \\)</p></div>"
+    },
+    {
+      "id": "faq-12",
+      "category": "sticking-points",
+      "question": "How do I graph a transformed logarithmic function without plotting a full table of points?",
+      "answer": "Start by sketching the parent curve's basic shape and its two anchor features: the vertical asymptote and the x-intercept (1, 0). Apply each transformation to those two anchors first — shift the asymptote line, shift or reflect the point — then redraw the same overall curve shape relative to the new anchors."
+    },
+    {
+      "id": "faq-13",
+      "category": "connections",
+      "question": "Why do the transformation rules for logarithmic functions seem \"flipped\" compared to exponential functions from EL2?",
+      "answer": "Because logarithmic and exponential functions are inverses (faq-6), and inverses swap the roles of input and output. In EL2, vertical shifts (which act on the output) moved the asymptote and range, while horizontal shifts (which act on the input) left them alone. Here, since logarithms and exponentials have swapped domain/range roles, it's exactly reversed: horizontal shifts (acting on the now-restricted input) move the asymptote and domain, while vertical shifts leave them alone. Nothing is arbitrary here — it's the direct, predictable consequence of the inverse relationship."
+    },
+    {
+      "id": "faq-14",
+      "category": "connections",
+      "question": "Why do logarithmic graphs matter beyond this course?",
+      "answer": "Logarithmic graphs describe a huge range of real phenomena that grow quickly at first and then level off in relative growth rate — learning curves, the relationship between an animal's size and its metabolism, or how perceived loudness relates to actual sound intensity. Understanding the shape, asymptote, and domain of a logarithmic graph also becomes essential for solving logarithmic and exponential equations later in this unit, since knowing where a function is even defined is the first step in solving any equation involving it."
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Graph an Exponential Function and Logarithmic Function",
+      "url": "https://www.youtube.com/watch?v=w1A2ZYmfGco",
+      "description": "Graphing an exponential function and its logarithmic inverse together, showing the mirror-image relationship across y = x.",
+      "category": "parent-and-inverse",
+      "relatedFaqs": [
+        "faq-1",
+        "faq-6"
+      ]
+    },
+    {
+      "id": "vid-2",
+      "title": "Vertical Asymptotes and Domain of Logarithmic Functions",
+      "url": "https://www.youtube.com/watch?v=Z9zLGlvWcBQ",
+      "description": "Determining the domain and vertical asymptote of a logarithmic function, verified graphically.",
+      "category": "parent-and-inverse",
+      "relatedFaqs": [
+        "faq-2",
+        "faq-4"
+      ]
+    },
+    {
+      "id": "vid-3",
+      "title": "Domain, Range, and Asymptote of y = -ln(x-6)",
+      "url": "https://youtu.be/QAtzVrOBeR8",
+      "description": "A worked example finding domain, range, and vertical asymptote for a transformed natural logarithm involving a horizontal shift and reflection.",
+      "category": "transformations",
+      "relatedFaqs": [
+        "faq-7",
+        "faq-9",
+        "faq-11"
+      ]
+    },
+    {
+      "id": "vid-4",
+      "title": "Domain, Range, and Asymptote of y = -log₃(x)+4",
+      "url": "https://youtu.be/TuiNgzK0XpA",
+      "description": "A worked example finding domain, range, and vertical asymptote for a transformed logarithm involving a vertical shift and reflection.",
+      "category": "transformations",
+      "relatedFaqs": [
+        "faq-8",
+        "faq-9",
+        "faq-11"
+      ]
+    }
+  ],
+  "apps": [],
+  "prompts": {
+    "guided": [
+      {
+        "id": "prompt-1",
+        "title": "Understand Why the Vertical Asymptote Exists",
+        "prompt": "I'm learning why g(x) = log_b(x) has a vertical asymptote at x = 0. Can you walk me through why the output plunges toward negative infinity as x gets closer and closer to 0 from the positive side? Use specific numbers to show me the pattern."
+      },
+      {
+        "id": "prompt-2",
+        "title": "Practice Tracking the Asymptote Through Transformations",
+        "prompt": "I'm learning how different transformations affect the vertical asymptote of a logarithmic function. Give me a transformed logarithmic equation and ask me to identify the asymptote, domain, and range step by step — first checking for a horizontal shift, then figuring out the rest. Give me several more examples of increasing difficulty and check my work."
+      },
+      {
+        "id": "prompt-3",
+        "title": "Distinguish Horizontal vs. Vertical Shift Effects",
+        "prompt": "I keep mixing up which transformations affect the domain of a logarithmic function and which don't. Can you quiz me with several transformed logarithmic equations, some with only horizontal shifts and some with only vertical shifts, and ask me to predict the domain before I calculate it? Help me build a reliable way to tell them apart."
+      },
+      {
+        "id": "prompt-4",
+        "title": "Compare EL2 and EL4 Transformation Rules",
+        "prompt": "I've learned that vertical shifts affect the asymptote for exponential functions (EL2), but horizontal shifts affect the asymptote for logarithmic functions (EL4) — the opposite pattern. Can you help me understand why this makes sense given that log and exponential functions are inverses? Walk me through the reasoning, not just the rule."
+      },
+      {
+        "id": "prompt-5",
+        "title": "Practice Graphing from Key Features",
+        "prompt": "I'm learning to graph a transformed logarithmic function using its vertical asymptote and x-intercept as anchor points instead of a full table of values. Give me a transformed equation and walk me through finding those two anchors, then sketching the graph. Give me more practice and check my sketches by describing what they should look like."
+      }
+    ],
+    "open": [
+      {
+        "id": "open-1",
+        "title": "Create Your Own",
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section EL4 (Graphs of Logarithmic Functions). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+      }
+    ]
+  }
+}
