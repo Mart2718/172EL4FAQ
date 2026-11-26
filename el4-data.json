@@ -134,6 +134,17 @@
         "faq-9",
         "faq-11"
       ]
+    },
+    {
+      "id": "vid-5",
+      "title": "Find an Equation of a Transformed Logarithm from a Graph with a Horizontal Reflection",
+      "url": "https://youtu.be/-dygDRv4Z_k",
+      "description": "Shows how a reflection across the y-axis, log_b(−x), puts the graph on the left side of its asymptote, working backward from a graph to its equation, the same flip used in half of the EL4 CheckIt problems.",
+      "category": "transformations",
+      "relatedFaqs": [
+        "faq-10",
+        "faq-11"
+      ]
     }
   ],
   "apps": [],
